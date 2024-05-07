@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="my-auto ml-[6.78px]-">
           <img src={Brunel} alt="Brunel" />
         </div>
-        <div className="flex">
+        <div className="flex space-x-5">
           <Link to="/projects">
             <SecondaryButton text="Get Projects" />
           </Link>
