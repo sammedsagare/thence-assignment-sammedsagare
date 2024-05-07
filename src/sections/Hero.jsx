@@ -10,6 +10,7 @@ import vector from "../assets/vector.png";
 import plus from "../assets/+.png";
 import minus from "../assets/-.png";
 import c from "../assets/c.png";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -19,7 +20,9 @@ export default function Hero() {
           <img src={Brunel} alt="Brunel" />
         </div>
         <div className="flex">
-          <SecondaryButton text="Get Projects" />
+          <Link to="/projects">
+            <SecondaryButton text="Get Projects" />
+          </Link>
           <PrimaryButton text="Onboard Talent" />
         </div>
       </nav>
