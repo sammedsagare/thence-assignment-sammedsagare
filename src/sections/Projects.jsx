@@ -17,7 +17,6 @@ export default function Projects() {
       setErrorMessage("Enter a valid email address");
     } else {
       setErrorMessage("");
-      window.location.href = "/success";
     }
   };
 
@@ -83,15 +82,17 @@ export default function Projects() {
               </p>
             </div>
           )}
-          <button
-            type="submit"
-            disabled={isDisabled}
-            className={`px-[49.61px] py-[26.11px] w-[417px] h-[75px] font-manrope font-medium text-lg text-center rounded-[107.06px] ${
-              isDisabled ? "bg-[#C9C9C9]" : "bg-tBlack text-white"
-            }`}
-          >
-            Submit
-          </button>
+          <Link to="/success">
+            <button
+              type="submit"
+              disabled={isDisabled}
+              className={`px-[49.61px] py-[26.11px] w-[417px] h-[75px] font-manrope font-medium text-lg text-center rounded-[107.06px] ${
+                isDisabled ? "bg-[#C9C9C9]" : "bg-tBlack text-white"
+              }`}
+            >
+              Submit
+            </button>
+          </Link>
         </form>
       </div>
     </>
