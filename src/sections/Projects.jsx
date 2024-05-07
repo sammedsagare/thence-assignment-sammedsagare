@@ -17,6 +17,7 @@ export default function Projects() {
       setErrorMessage("Enter a valid email address");
     } else {
       setErrorMessage("");
+      window.location.href = "/success";
     }
   };
 
@@ -26,12 +27,13 @@ export default function Projects() {
       setName(value);
     } else if (name === "email") {
       setEmail(value);
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      setIsDisabled(!emailRegex.test(value));
     }
-    setIsDisabled(!value);
   };
 
   return (
-    <div className="h-screen">
+    <>
       <nav className="flex justify-between border border-[#EAEAEA] rounded-[65.28px] mx-6 mt-6 px-[20.89px] py-[16.97px]">
         <div className="my-auto ml-[6.78px]-">
           <img src={Brunel} alt="Brunel" />
@@ -42,12 +44,10 @@ export default function Projects() {
           </Link>
         </div>
       </nav>
-      <div className="flex flex-col mx-auto text-center">
-        <div className="mt-10">
-          <h1 className="font-grace text-[#2DA950] text-4xl">
-            Registration Form
-          </h1>
-          <h1 className="font-manrope font-semibold text-[#1c1c1c] text-[56px] leading-[67.2px]">
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col mx-auto mt-10 text-center">
+          <h1 className="font-grace text-tGreen text-4xl">Registration Form</h1>
+          <h1 className="font-manrope font-semibold text-tBlack text-[56px] leading-[67.2px]">
             Start your success
             <br />
             Journey here!
@@ -87,13 +87,13 @@ export default function Projects() {
             type="submit"
             disabled={isDisabled}
             className={`px-[49.61px] py-[26.11px] w-[417px] h-[75px] font-manrope font-medium text-lg text-center rounded-[107.06px] ${
-              isDisabled ? "bg-[#C9C9C9]" : "bg-[#1C1C1C] text-white"
+              isDisabled ? "bg-[#C9C9C9]" : "bg-tBlack text-white"
             }`}
           >
             Submit
           </button>
         </form>
       </div>
-    </div>
+    </>
   );
 }

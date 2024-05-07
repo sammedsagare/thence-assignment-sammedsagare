@@ -28,9 +28,7 @@ export default function Hero() {
       </nav>
       <div className="flex flex-col mx-auto text-center mt-20">
         <div>
-          <h1 className="font-grace text-4xl text-[#2DA950]">
-            Success Stories
-          </h1>
+          <h1 className="font-grace text-4xl text-tGreen">Success Stories</h1>
         </div>
         <div>
           <h1 className="font-manrope font-semibold text-[56px] leading-[67.2px]">
@@ -50,10 +48,10 @@ export default function Hero() {
                 alt=""
                 className="w-[79.17px] h-[78.48px] -mt-7 -ml-7"
               />
-              <h1 className="font-manrope text-[64px] text-[#1c1c1c] font-medium w-[121px] h-[77px] -mt-12">
+              <h1 className="font-manrope text-[64px] text-tBlack font-medium w-[121px] h-[77px] -mt-12">
                 40%
               </h1>
-              <h1 className="font-manrope font-medium text-lg text-[#828282] w-[207.82px] h-[92px] mt-2">
+              <h1 className="font-manrope font-medium text-lg text-tGrey w-[207.82px] h-[92px] mt-2">
                 Achieved reduction in project execution time by optimising team
                 availability
               </h1>
@@ -64,10 +62,10 @@ export default function Hero() {
               <img src={rocket} alt="" />
             </div>
             <div className="flex flex-col">
-              <h1 className="font-manrope text-2xl text-black font-bold">
+              <h1 className="font-manrope text-2xl text-tBlack font-bold">
                 10 DAYS
               </h1>
-              <h1 className="font-manrope text-base text-[#828282] font-medium">
+              <h1 className="font-manrope text-base text-tGrey font-medium">
                 Staff Deployment
               </h1>
             </div>
@@ -103,28 +101,28 @@ export default function Hero() {
           <h1 className="font-grace text-[32px] leading-9 text-[#9E9D9D]">
             What's on your mind
           </h1>
-          <h1 className="font-manrope font-semibold text-[#1c1c1c] text-6xl">
+          <h1 className="font-manrope font-semibold text-tBlack text-6xl">
             Ask Questions
           </h1>
         </div>
         <img src={vector} alt="" className="absolute -bottom-7 left-1" />
         <div className="flex flex-col mt-20 mr-24 space-y-9 w-[581px] h-[538px]">
-          <div className="flex justify-between border-b border-[#D7D7D7] pb-6">
-            <h1 className="font-manrope text-xl text-[#1c1c1c] font-semibold">
+          <div className="flex justify-between border-b border-tWhite pb-6">
+            <h1 className="font-manrope text-xl text-tBlack font-semibold">
               Do you offer freelancers?
             </h1>
             <img src={plus} alt="" className="w-[14px] h-[14px]" />
           </div>
-          <div className="flex justify-between border-b border-[#D7D7D7] pb-6">
-            <h1 className="font-manrope text-xl text-[#1c1c1c] font-semibold w-[411px] h-14">
+          <div className="flex justify-between border-b border-tWhite pb-6">
+            <h1 className="font-manrope text-xl text-tBlack font-semibold w-[411px] h-14">
               What's the guarantee that I will be satisfied with the hired
               talent?
             </h1>
             <img src={plus} alt="" className="w-[14px] h-[14px]" />
           </div>
-          <div className="flex flex-col border-b border-[#D7D7D7] pb-6">
+          <div className="flex flex-col border-b border-tWhite pb-6">
             <div className="flex justify-between">
-              <h1 className="font-manrope text-xl text-[#1c1c1c] font-semibold w-[411px] h-14">
+              <h1 className="font-manrope text-xl text-tBlack font-semibold w-[411px] h-14">
                 Can I hire multiple talents at once?
               </h1>
               <img src={minus} alt="" className="w-6 h-6" />
@@ -136,14 +134,14 @@ export default function Hero() {
               collaborative solutions for resolution.
             </h1>
           </div>
-          <div className="flex justify-between border-b border-[#D7D7D7] pb-6">
-            <h1 className="font-manrope text-xl text-[#1c1c1c] font-semibold w-[411px] h-14">
+          <div className="flex justify-between border-b border-tWhite pb-6">
+            <h1 className="font-manrope text-xl text-tBlack font-semibold w-[411px] h-14">
               Why should I not go to an agency directly?
             </h1>
             <img src={plus} alt="" className="w-[14px] h-[14px]" />
           </div>
-          <div className="flex justify-between border-b border-[#D7D7D7] pb-6">
-            <h1 className="font-manrope text-xl text-[#1c1c1c] font-semibold w-[411px] h-14">
+          <div className="flex justify-between border-b border-tWhite pb-6">
+            <h1 className="font-manrope text-xl text-tBlack font-semibold w-[411px] h-14">
               Who can help me pick a right skillset and duration for me?
             </h1>
             <img src={plus} alt="" className="w-[14px] h-[14px]" />
@@ -154,17 +152,15 @@ export default function Hero() {
         <div className="flex justify-between w-[1376px] h-[144px] rounded-[40px] mx-auto mt-[135px] p-[60px] bg-[#f5f5f5]">
           <div className="flex gap-5 my-auto">
             <img src={c} alt="" className="w-6 h-6" />
-            <h1 className="font-manrope font-medium text-lg text-[#1c1c1c]">
+            <h1 className="font-manrope font-medium text-lg text-tBlack">
               Talup 2023. All rights reserved
             </h1>
           </div>
           <div className="flex gap-5 my-auto">
-            <h1 className="font-manrope text-lg text-[#1c1c1c]">
+            <h1 className="font-manrope text-lg text-tBlack">
               Terms & Conditions
             </h1>
-            <h1 className="font-manrope text-lg text-[#1c1c1c]">
-              Privacy Policy
-            </h1>
+            <h1 className="font-manrope text-lg text-tBlack">Privacy Policy</h1>
           </div>
         </div>
       </div>
